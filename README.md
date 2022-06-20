@@ -38,7 +38,7 @@ Todo.txt is entirely unstructured - none of the elements below are strictly nece
 
 ### Priority
 
-<pre><b style="text-decoration: underline">(A)</b> 22-02-22 22-02-22 this is a task +project @context note:something</pre>
+<pre><b><em>(A)</em></b> 22-02-22 22-02-22 this is a task +project @context note:something</pre>
 
 Tasks are assigned alphabetical priorities, with `A` generally being the highest. Priorities come before all other elements. This language spec file recognizes 4 priorities, `A`, `B`, `C`, and `D` (capitalization important), each assigned to a quadrant of the Eisenhower matrix:
 
@@ -52,31 +52,31 @@ Tasks are assigned alphabetical priorities, with `A` generally being the highest
 
 ### Completion & Creation Dates
 
-<pre>(A) <b style="text-decoration: underline">22-02-22 22-02-22</b> this is a task +project @context note:something</pre>
+<pre>(A) <b><em>22-02-22 22-02-22</em></b> this is a task +project @context note:something</pre>
 
 You may mention a task's completion and creation (preferably in this order) dates.
 
 ### Task
 
-<pre>(A) 22-02-22 22-02-22 <b style="text-decoration: underline">this is a task</b> +project @context note:something</pre>
+<pre>(A) 22-02-22 22-02-22 <b><em>this is a task</em></b> +project @context note:something</pre>
 
 A description of the task itself.
 
 ### Project
 
-<pre>(A) 22-02-22 22-02-22 this is a task <b ssstyle="text-decoration: underline">+project</b> @context note:something</pre>
+<pre>(A) 22-02-22 22-02-22 this is a task <b><em>+project</em></b> @context note:something</pre>
 
 The project that this task is directly a part of. For example, "change oil" would be a part of the "service car" project.
 
 ### Context
 
-<pre>(A) 22-02-22 22-02-22 this is a task +project <b style="text-decoration: underline">@context</b> note:something</pre>
+<pre>(A) 22-02-22 22-02-22 this is a task +project <b><em>@context</em></b> note:something</pre>
 
 The place or situation where you'll work on the task.
 
 ### Label
 
-<pre>(A) 22-02-22 22-02-22 this is a task +project @context <b style="text-decoration: underline">key:value</b></pre>
+<pre>(A) 22-02-22 22-02-22 this is a task +project @context <b><em>key:value</em></b></pre>
 
 Any additional comments you may have as key/value pair separated by a `:`.
 
