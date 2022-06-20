@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language id="todo" _name="Todo" version="2.0" _section="Source">
+
+
+<metadata>
+  <property name="mimetypes">text/plain</property>
+  <property name="globs">*.todo</property>
+</metadata>
+
+
+<styles>
+  <style id="priority_a" _name="priority_a" map-to="todo:priority_a"/>
+  <style id="priority_b" _name="priority_b" map-to="todo:priority_b"/>
+  <style id="priority_c" _name="priority_c" map-to="todo:priority_c"/>
+  <style id="priority_d" _name="priority_d" map-to="todo:priority_d"/>
+  <style id="status" _name="status" map-to="todo:status"/>
+  <style id="project" _name="project" map-to="todo:project"/>
+  <style id="context" _name="context" map-to="todo:context"/>
+  <style id="label" _name="label" map-to="todo:label"/>
+  <style id="date" _name="date" map-to="todo:date"/>
+</styles>
+
+
+<definitions>
+  <context id="todo">
+		<include>
+		  <context id="priority_a" style-ref="priority_a">
+				<match>^\(A\)\s</match>
+			</context>
+			
+			<context id="priority_b" style-ref="priority_b">
+				<match>^\(B\)\s</match>
+			</context>
+			
+			<context id="priority_c" style-ref="priority_c">
+				<match>^\(C\)\s</match>
+			</context>
+			
+			<context id="priority_d" style-ref="priority_d">
+				<match>^\(D\)\s</match>
+			</context>
+		  
+			<context id="status" style-ref="status">
+				<match>^x\s.*$</match>
+			</context>
+			
+			<context id="project" style-ref="project">
+				<match>\+[^\s]+</match>
+			</context>
+			
+			<context id="context" style-ref="context">
+				<match>@[^\s]+</match>
+			</context>
+			
+			<context id="label" style-ref="label">
+				<match>[^\s]+:[^\s]+</match>
+			</context>
+			
+			<context id="date" style-ref="date">
+				<match>([0-9]{2}-){2}[0-9]{2}</match>
+			</context>
+		</include>
+	</context>
+</definitions>
+</language>
